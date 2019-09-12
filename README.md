@@ -9,10 +9,10 @@ We take the use case of a Bank selling the personal loan to its customers and pr
 
 When you have completed this code pattern, you will understand how to:
 
-* [goal 1]
-* [goal 2]
-* [goal 3]
-* [goal 4]
+* How to deal with real-time data in IBM Streaming Analytics.
+* How to design custom Stream Flows to build your own live streaming service.
+* How to read any data in Streams FLow with the available nodes.
+* How to create a model and deploy it to Watson Machine Learning.
 
 <!--add an image in this path-->
 ![architecture](doc/source/images/architecture.png)
@@ -20,11 +20,12 @@ When you have completed this code pattern, you will understand how to:
 <!--Optionally, add flow steps based on the architecture diagram-->
 ## Flow
 
-1. Step 1.
-2. Step 2.
-3. Step 3.
-4. Step 4.
-5. Step 5.
+1. Create a REST API with python and deploy it to Cloud Foundary service. Calling this API returns a json with random attribute values of the outsource dataset. Thus it simulates real-time data.
+2. Create a Watson Studio instance and a Watson Machine Learning instance in IBM Cloud.
+3. Create a new Jupyter notebook in Watson Studio and execute the cells to successfully train, test, get accuracy and deploy the model to Watson Machine Learning.
+4. Once the Real-time data source and the machine learning model is ready the stream flow can be built. Create a new Streams Flow in Watson Studio.
+5. Build a flow with input as the REST API, data processing by the deployed Watson Machine Learning model and Save the output to a csv file in Cloud Object Storage.
+6. Launch the Streaming Analytics dashboard and visualize the data in real-time.
 
 <!--Optionally, update this section when the video is created-->
 # Watch the Video
