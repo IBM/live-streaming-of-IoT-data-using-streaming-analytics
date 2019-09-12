@@ -1,7 +1,7 @@
 <!-- Add a new Title and fill in the blanks -->
-# live-streaming-of-IoT-data-using-streaming-analytics
+# Live streaming and analysis of data with ML Model predictions using IBM Streaming Analytics
 
-In this code pattern, we will create a live dashboard view of data, analyse the data and predict accordingly using IBM Streaming Analytics and Watson Studio.
+In this code pattern, we will create a live dashboard view of data, analyze the data and predict accordingly using IBM Streaming Analytics and Watson Studio.
 
 Every retailer tries to sell a product to a customer but not all customers are willing to accept the product, we gather a customer-related dataset and based on that predict whether the customer will buy the product if offered. All of this will happen in real-time on a dashboard so that it helps the retailer to better understand which type of customers to target to get the maximum sales of their product.
 
