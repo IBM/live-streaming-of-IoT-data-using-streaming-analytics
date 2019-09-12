@@ -25,7 +25,7 @@ When you have completed this code pattern, you will understand how to:
 <!--Optionally, update this section when the video is created-->
 # Watch the Video
 
-[!gif](doc/source/dashboard.gif)
+![](doc/source/dashboard.gif)
 
 # Steps
 
