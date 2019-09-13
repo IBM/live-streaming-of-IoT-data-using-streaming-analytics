@@ -15,7 +15,7 @@ When you have completed this code pattern, you will understand how to:
 * How to create a model and deploy it to Watson Machine Learning.
 
 <!--add an image in this path-->
-![architecture](doc/source/images/architecture.png)
+![architecture](doc/source/images/Architecture.png)
 
 <!--Optionally, add flow steps based on the architecture diagram-->
 ## Flow
@@ -30,7 +30,7 @@ When you have completed this code pattern, you will understand how to:
 <!--Optionally, update this section when the video is created-->
 # Watch the Video
 
-![](doc/source/dashboard.gif)
+![](doc/source/images/dashboard.gif)
 
 # Steps
 
