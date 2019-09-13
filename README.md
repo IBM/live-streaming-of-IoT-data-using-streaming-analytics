@@ -15,7 +15,7 @@ When you have completed this code pattern, you will understand how to:
 * How to create a model and deploy it to Watson Machine Learning.
 
 <!--add an image in this path-->
-![architecture](doc/source/images/Architecture.png)
+![](doc/source/images/architecture.png)
 
 <!--Optionally, add flow steps based on the architecture diagram-->
 ## Flow
