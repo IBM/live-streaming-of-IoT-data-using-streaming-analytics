@@ -28,16 +28,14 @@ When you have completed this code pattern, you will understand how to:
 6. Launch the Streaming Analytics dashboard and visualize the data in real-time.
 
 <!--Optionally, update this section when the video is created-->
-# Watch the Video
+## Watch the Video
 
 
-# Pre-requisites
+## Pre-requisites
 1. [IBM Cloud Account](https://cloud.ibm.com)
 2. [Cloud Object Storage Service](https://cloud.ibm.com/catalog/services/cloud-object-storage)
 
-# Steps
-
-# Run locally
+## Steps
 
 1. [Clone the repo](#1-clone-the-repo).
 2. [Deploy the API](#2-deploy-the-api).
@@ -80,13 +78,13 @@ Create the following services:
 
 <!--Add a section that explains to the reader what typical output looks like, include screenshots -->
 
-# Sample output
+## Sample output
 
 ![](doc/source/images/dashboard.gif)
 
 <!--Optionally, include any troubleshooting tips (driver issues, etc)-->
 
-# Troubleshooting
+## Troubleshooting
 
 * Error: Environment {GUID} is still not active, retry once status is active
 
