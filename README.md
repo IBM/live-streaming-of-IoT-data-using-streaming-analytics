@@ -30,158 +30,59 @@ When you have completed this code pattern, you will understand how to:
 <!--Optionally, update this section when the video is created-->
 # Watch the Video
 
-![](doc/source/images/dashboard.gif)
+
+# Pre-requisites
+1. [IBM Cloud Account](https://cloud.ibm.com)
+2. [Cloud Object Storage Service](https://cloud.ibm.com/catalog/services/cloud-object-storage)
 
 # Steps
 
-Use the **Deploy to IBM Cloud** button **OR** create the services and run locally.
-
-<!--Optionally, add a deploy to ibm cloud button-->
-
-## Deploy to IBM Cloud
-
-[![Deploy to IBM Cloud](https://cloud.ibm.com/deploy/button.png)](https://cloud.ibm.com/deploy?repository=https://github.com/IBM/watson-banking-chatbot.git)
-
-1. Press **Deploy to IBM Cloud**, and then click **Deploy**.
-
-<!--optional step-->
-2. In Toolchains, click **Delivery Pipeline** to watch while the app is deployed. After it's deployed, the app can be viewed by clicking **View app**.
-![toolchain pipeline](doc/source/images/toolchain-pipeline.png)
-
-<!--update with service names from manifest.yml-->
-
-3. To see the app and services created and configured for this code pattern, use the IBM Cloud dashboard. The app is named `watson-banking-chatbot` with a unique suffix. The following services are created and easily identified by the `wbc-` prefix:
-    * `wbc-conversation-service`
-    * `wbc-discovery-service`
-    * `wbc-natural-language-understanding-service`
-    * `wbc-tone-analyzer-service`
-
-## Run locally
-
-> NOTE: These steps are only needed when running locally instead of using the **Deploy to IBM Cloud** button.
-
-<!-- there are MANY updates necessary here, just screenshots where appropriate -->
+# Run locally
 
 1. [Clone the repo](#1-clone-the-repo).
-2. [Create Watson services](#2-create-watson-services).
-3. [Import the Watson Assistant workspace](#3-import-the-watson-assistant-workspace).
-4. [Load the Watson Discovery documents](#4-load-the-watson-discovery-documents).
-5. [Configure credentials](#5-configure-credentials).
-5. [Run the application](#6-run-the-application).
+2. [Deploy the API](#2-deploy-the-api).
+3. [Create Watson Services](#3-create-watson-services).
+4. [Deploy the ML Model](#4-deploy-the-ml-model).
+5. [Create IBM Streaming Analytics service](#5-create-ibm-streaming-analytics-service).
+6. [Create the Streams Flow in Watson Studio](#6-create-the-streams-flow-in-watson-studio).
+7. [Visualize the Streams Dashboard](#7-visualize-the-streams-dashboard).
 
 ### 1. Clone the repo
 
-Clone the `watson-banking-chatbot` repo locally. In a terminal, run:
+Clone the `live-streaming-of-IoT-data-using-streaming-analytics` repo locally. In a terminal, run:
 
 ```bash
-git clone https://github.com/IBM/watson-banking-chatbot
+git clone https://github.com/IBM/live-streaming-of-IoT-data-using-streaming-analytics
 ```
 
-We’ll be using the file [`data/assistant/workspaces/banking.json`](data/assistant/workspaces/banking.json) and the folder
-[`data/assistant/workspaces/`](data/assistant/workspaces/)
+We’ll be using the file [`data/training-testing-data.csv`](data/training-testing-data.csv) and the folder
+[`flask-API`](flask-api/).
 
-### 2. Create Watson services
+### 2. Deploy API
+
+### 3. Create Watson services
 
 Create the following services:
 
-* [**Watson Assistant**](https://cloud.ibm.com/catalog/services/assistant)
-* [**Watson Discovery**](https://cloud.ibm.com/catalog/services/discovery)
-* [**Watson Tone Analyzer**](https://cloud.ibm.com/catalog/services/tone-analyzer)
-* [**Watson Natural Language Understanding**](https://cloud.ibm.com/catalog/services/natural-language-understanding)
+* [**Watson Studio**](https://cloud.ibm.com/catalog/services/watson-studio)
+* [**Watson Machine Learning**](https://cloud.ibm.com/catalog/services/machine-learning)
 
-### 3. Import the Watson Assistant workspace
+### 4. Deploy the ML Model
 
-* Find the Watson Assistant service in your IBM Cloud Dashboard.
-* Select the service, and then click **Launch tool**.
-* Go to the **Skills** tab.
-* Click **Create skill**.
-* Click the **Import skill** tab.
-* Click **Choose JSON file**, go to your cloned repo dir, and `Open` the workspace.json file in `data/conversation/workspaces/banking.json` (or the old full version in `full_banking.json`).
-* Select **Everything**, and click **Import**.
 
-To find the `WORKSPACE_ID` for Watson Assistant:
+### 5. Create IBM Streaming Analytics service
 
-* Go back to the **Skills** tab.
-* Click the three dots in the upper-right corner of the **watson-banking-chatbot** card, and select **View API Details**.
-* Copy the `Workspace ID` GUID.
-  ![view_api_details](doc/source/images/view_api_details.png)
 
-*Optionally*, to view the assistant dialog, select the workspace and choose the
-**Dialog** tab. Here's a snippet of the dialog:
+### 6. Create the Streams Flow in Watson Studio
 
-![dialog](doc/source/images/dialog.PNG)
 
-### 4. Load the Watson Discovery documents
-
-Launch the **Watson Discovery** tool. Create a **new data collection**,
-and give the data collection a unique name.
-
-> Save the **environment_id** and **collection_id** for your `.env` file in the next step.
-
-Under **Add data to this collection**, use **Drag and drop your documents here or browse from computer** to seed the content with the five documents in `data/discovery/docs`.
-
-### 5. Configure credentials
-
-The credentials for IBM Cloud services (Watson Assistant, Watson Discovery, 
-Watson Tone Analyzer and Watson Natural Language Understanding) can be found in the **Services** menu in IBM Cloud
-by selecting the **Service Credentials** option for each service.
-
-The other settings for Watson Assistant and Watson Discovery were collected during the
-earlier setup steps (``DISCOVERY_COLLECTION_ID``, ``DISCOVERY_ENVIRONMENT_ID``, and
-``WORKSPACE_ID``).
-
-Copy the [`env.sample`](env.sample) to `.env`.
-
-```bash
-cp env.sample .env
-```
-Edit the `.env` file with the necessary settings.
-
-#### `env.sample:`
-
-```bash
-# Copy this file to .env and replace the credentials with
-# your own before starting the app.
-
-# Note: If you are using older services, you may need _USERNAME and _PASSWORD
-# instead of _IAM_APIKEY.
-
-# Watson Assistant
-WORKSPACE_ID=<add_assistant_workspace>
-ASSISTANT_URL=<add_assistant_url>
-ASSISTANT_IAM_APIKEY=<add_assistant_iam_apikey>
-
-# Watson Discovery
-DISCOVERY_URL=<add_discovery_url>
-DISCOVERY_ENVIRONMENT_ID=<add_discovery_environment_id>
-DISCOVERY_COLLECTION_ID=<add_discovery_collection_id>
-DISCOVERY_IAM_APIKEY=<add_discovery_iam_apikey>
-
-# Watson Natural Language Understanding
-NATURAL_LANGUAGE_UNDERSTANDING_URL=<add_nlu_url>
-NATURAL_LANGUAGE_UNDERSTANDING_IAM_APIKEY=<add_nlu_iam_apikey>
-
-# Watson Tone Analyzer
-TONE_ANALYZER_URL=<add_tone_analyzer_url>
-TONE_ANALYZER_IAM_APIKEY=<add_tone_analyzer_iam_apikey>
-
-# Run locally on a non-default port (default is 3000)
-# PORT=3000
-```
-
-### 6. Run the application
-
-1. Install [Node.js](https://nodejs.org/en/) runtime or NPM.
-1. Start the app by running `npm install`, followed by `npm start`.
-1. Use the chatbot at `localhost:3000`.
-
-> Note: The server host can be changed as required in the server.js file, and `PORT` can be set in the `.env` file.
+### 7. Visualize the Streams Dashboard
 
 <!--Add a section that explains to the reader what typical output looks like, include screenshots -->
 
 # Sample output
 
-![sample_output](doc/source/images/sample_output.png)
+![](doc/source/images/dashboard.gif)
 
 <!--Optionally, include any troubleshooting tips (driver issues, etc)-->
 
