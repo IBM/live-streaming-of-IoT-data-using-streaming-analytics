@@ -110,6 +110,11 @@ Waiting for app to start...
 #0   running   2019-09-17T06:22:59Z   19.5%   103.4M of 512M   343.4M of 1G
 ```
 
+* Once the API is deployed and running you can test the API.
+
+* Goto [IBM Cloud Resources]() and select the Deployed API _`my-api`_, you will see a dashboard as shown.
+
+![](doc/source/images/cloudfoundrydeployed.png)
 
 ### 3. Create Watson services
 
