@@ -86,7 +86,7 @@ ibmcloud login --sso
 ibmcloud target --cf
 ```
 
-* From within the `_flask-api_` directory push your app to IBM Cloud.
+* From within the _`flask-api`_ directory push your app to IBM Cloud.
 ```bash
 ibmcloud cf push
 ```
