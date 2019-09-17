@@ -63,7 +63,7 @@ In order to simulate real-time incoming data, we create an API and deploy it to 
 
 * Create a [Cloud Foundry](https://cloud.ibm.com/catalog/starters/cloud-foundry?runtime=python) service with python runtime and follow the steps bellow.
 
-[](doc/source/images/cloudfoundry.png)
+![](doc/source/images/cloudfoundry.png)
 
 * Goto _`flask-api`_ directory.
 
