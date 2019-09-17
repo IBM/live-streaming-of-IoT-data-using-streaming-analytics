@@ -63,7 +63,9 @@ In order to simulate real-time incoming data, we create an API and deploy it to 
 
 * Create a [Cloud Foundry](https://cloud.ibm.com/catalog/starters/cloud-foundry?runtime=python) service with python runtime and follow the steps bellow.
 
-* Goto `flask-api` directory.
+[](doc/source/images/cloudfoundry.png)
+
+* Goto _`flask-api`_ directory.
 
 ```bash
 cd flask-api/
@@ -90,6 +92,24 @@ ibmcloud target --cf
 ```bash
 ibmcloud cf push
 ```
+
+* You will see output on your terminal as shown, verify the state is _`running`_:
+
+<code>
+Invoking 'cf push'...
+
+Pushing from manifest to org manoj.jahgirdar@in.ibm.com / space dev as manoj.jahgirdar@in.ibm.com...
+
+...
+
+Waiting for app to start...
+
+...
+
+  <b>state</b>     since                  cpu     memory           disk           details
+#0   <b>running</b>   2019-09-17T06:22:59Z   19.5%   103.4M of 512M   343.4M of 1G
+</code>
+
 
 ### 3. Create Watson services
 
