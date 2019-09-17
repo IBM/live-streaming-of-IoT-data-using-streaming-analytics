@@ -121,7 +121,7 @@ Waiting for app to start...
 
 **NOTE: This API Link is Important, please save it in any notepad since it will be used in subsequent steps.**
 
-* To test the API use any Rest API Client like [Postman]().
+* To test the API use any Rest API Client like [Postman](https://www.getpostman.com/downloads/).
 
 * Make a GET request to the earlier copied link as shown.
 
