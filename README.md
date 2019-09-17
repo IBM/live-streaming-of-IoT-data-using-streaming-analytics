@@ -38,7 +38,7 @@ When you have completed this code pattern, you will understand how to:
 ## Steps
 
 1. [Clone the repo](#1-clone-the-repo).
-2. [Deploy the API](#2-deploy-the-api).
+2. [Deploy API](#2-deploy-api).
 3. [Create Watson Services](#3-create-watson-services).
 4. [Deploy the ML Model](#4-deploy-the-ml-model).
 5. [Create IBM Streaming Analytics service](#5-create-ibm-streaming-analytics-service).
@@ -137,6 +137,21 @@ Create the following services:
 
 * [**Watson Studio**](https://cloud.ibm.com/catalog/services/watson-studio)
 * [**Watson Machine Learning**](https://cloud.ibm.com/catalog/services/machine-learning)
+
+* Goto [IBM Cloud Resources](https://cloud.ibm.com/resources) and select the _`Watson Studio`_ service.
+
+![](doc/source/images/resourceslist2.png)
+
+* Then click **Get Started**.
+
+* In Watson Studio click Create a project > Create an empty project and name it _`Streaming Analytics Demo`_.
+
+![](/doc/source/images/watsonstudioproject.png)
+
+* Once the project is created, _`click on add to project`_ on the top right corner and select _`Notebook`_ in the options as shown.
+
+![](/doc/source/images/jupyternotebook.png)
+
 
 ### 4. Deploy the ML Model
 
