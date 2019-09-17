@@ -50,7 +50,7 @@ When you have completed this code pattern, you will understand how to:
 Clone the `live-streaming-of-IoT-data-using-streaming-analytics` repo locally. In a terminal, run:
 
 ```bash
-git clone https://github.com/IBM/live-streaming-of-IoT-data-using-streaming-analytics
+$ git clone https://github.com/IBM/live-streaming-of-IoT-data-using-streaming-analytics
 ```
 
 We’ll be using the file [`data/training-testing-data.csv`](data/training-testing-data.csv) and the folder
@@ -68,29 +68,29 @@ In order to simulate real-time incoming data, we create an API and deploy it to 
 * Goto _`flask-api`_ directory.
 
 ```bash
-cd flask-api/
+$ cd flask-api/
 ```
 
 * Make sure you have installed [IBM Cloud CLI](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started&locale=en-US) before you proceed.
 
 * Log in to your IBM Cloud account, and select an API endpoint.
 ```bash
-ibmcloud login
+$ ibmcloud login
 ```
 
 >NOTE: If you have a federated user ID, instead use the following command to log in with your single sign-on ID.
 ```bash
-ibmcloud login --sso
+$ ibmcloud login --sso
 ```
 
 * Target a Cloud Foundry org and space:
 ```bash
-ibmcloud target --cf
+$ ibmcloud target --cf
 ```
 
 * From within the _`flask-api`_ directory push your app to IBM Cloud.
 ```bash
-ibmcloud cf push
+$ ibmcloud cf push
 ```
 
 * You will see output on your terminal as shown, verify the state is _`running`_:
