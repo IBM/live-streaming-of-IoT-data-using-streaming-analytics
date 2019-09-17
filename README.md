@@ -59,7 +59,7 @@ We’ll be using the file [`data/training-testing-data.csv`](data/training-testi
 ### 2. Deploy API
 
 In order to simulate real-time incoming data, we create an API and deploy it to Cloud Foundry.
->NOTE: IBM Streaming analytics has the following input sources: Stream events from a Kafka broker, IBM Event Streams, MQTT broker, Watson IoT device platform. If you have knowledge to these then you can skip this step and create your own input block.
+>NOTE: IBM Streaming analytics has the following input sources: Stream events from a Kafka broker, IBM Event Streams, MQTT broker, Watson IoT device platform. If you have knowledge about any of these, then you can skip this step and create your own input block.
 
 * Create a [Cloud Foundry](https://cloud.ibm.com/catalog/starters/cloud-foundry?runtime=python) service with python runtime and follow the steps bellow.
 
@@ -86,7 +86,7 @@ ibmcloud login --sso
 ibmcloud target --cf
 ```
 
-* From within the `*flask-api*` directory push your app to IBM Cloud.
+* From within the `_flask-api_` directory push your app to IBM Cloud.
 ```bash
 ibmcloud cf push
 ```
