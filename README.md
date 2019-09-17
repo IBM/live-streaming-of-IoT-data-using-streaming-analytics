@@ -95,7 +95,7 @@ ibmcloud cf push
 
 * You will see output on your terminal as shown, verify the state is _`running`_:
 
-<code>
+```
 Invoking 'cf push'...
 
 Pushing from manifest to org manoj.jahgirdar@in.ibm.com / space dev as manoj.jahgirdar@in.ibm.com...
@@ -106,9 +106,9 @@ Waiting for app to start...
 
 ...
 
-  <b>state</b>     since                  cpu     memory           disk           details
-#0   <b>running</b>   2019-09-17T06:22:59Z   19.5%   103.4M of 512M   343.4M of 1G
-</code>
+  state     since                  cpu     memory           disk           details
+#0   running   2019-09-17T06:22:59Z   19.5%   103.4M of 512M   343.4M of 1G
+```
 
 
 ### 3. Create Watson services
