@@ -112,12 +112,14 @@ Waiting for app to start...
 
 * Once the API is deployed and running you can test the API.
 
-* Goto [IBM Cloud Resources]() and select the Deployed API _`my-api`_, you will see a dashboard as shown.
+* Goto [IBM Cloud Resources](https://cloud.ibm.com/resources) and select the Deployed API _`my-api`_. 
+
+![](doc/source/images/resourceslist.png)
+
+* Inside the _`my-api`_ dashboard, right click on **Visit App URL** and Copy the link address. 
+>Example link address: https://my-api-xx-yy.eu-gb.mybluemix.net/
 
 ![](doc/source/images/cloudfoundrydeployed.png)
-
-* Right click on **Visit App URL** and Copy the link address. 
->Example link address: https://my-api-xx-yy.eu-gb.mybluemix.net/
 
 **NOTE: This API Link is Important, please save it in any notepad since it will be used in subsequent steps.**
 
