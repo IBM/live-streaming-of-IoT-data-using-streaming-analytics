@@ -58,6 +58,39 @@ We’ll be using the file [`data/training-testing-data.csv`](data/training-testi
 
 ### 2. Deploy API
 
+In order to simulate real-time incoming data, we create an API and deploy it to Cloud Foundry.
+>NOTE: IBM Streaming analytics has the following input sources: Stream events from a Kafka broker, IBM Event Streams, MQTT broker, Watson IoT device platform. If you have knowledge to these then you can skip this step and create your own input block.
+
+* Create a [Cloud Foundry](https://cloud.ibm.com/catalog/starters/cloud-foundry?runtime=python) service with python runtime and follow the steps bellow.
+
+* Goto `flask-api` directory.
+
+```bash
+cd flask-api/
+```
+
+* Make sure you have installed [IBM Cloud CLI](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started&locale=en-US) before you proceed.
+
+* Log in to your IBM Cloud account, and select an API endpoint.
+```bash
+ibmcloud login
+```
+
+>NOTE: If you have a federated user ID, instead use the following command to log in with your single sign-on ID.
+```bash
+ibmcloud login --sso
+```
+
+* Target a Cloud Foundry org and space:
+```bash
+ibmcloud target --cf
+```
+
+* From within the `*flask-api*` directory push your app to IBM Cloud.
+```bash
+ibmcloud cf push
+```
+
 ### 3. Create Watson services
 
 Create the following services:
