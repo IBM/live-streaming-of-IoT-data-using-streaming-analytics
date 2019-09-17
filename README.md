@@ -116,6 +116,19 @@ Waiting for app to start...
 
 ![](doc/source/images/cloudfoundrydeployed.png)
 
+* Right click on **Visit App URL** and Copy the link address. 
+>Example link address: https://my-api-xx-yy.eu-gb.mybluemix.net/
+
+**NOTE: This API Link is Important, please save it in any notepad since it will be used in subsequent steps.**
+
+* To test the API use any Rest API Client like [Postman]().
+
+* Make a GET request to the earlier copied link as shown.
+
+![](/doc/source/images/postmantest.png)
+
+* A Json body is returned in response which is the outsource data that can be sent to the model to get the predictions.
+
 ### 3. Create Watson services
 
 Create the following services:
