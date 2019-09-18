@@ -148,7 +148,9 @@ Create the following services:
 
 ![](/doc/source/images/watsonstudioproject.png)
 
-* Once the project is created, _`click on add to project`_ on the top right corner and select _`Notebook`_ in the options as shown.
+* Once the project is created, click on _`Add to project`_ on the top right corner and select _`Notebook`_ in the options.
+
+* In the New Notebook page click on _`From URL`_ and enter name and the URL : `https://github.com/IBM/live-streaming-of-IoT-data-using-streaming-analytics/blob/master/notebook/Personal%20Loan%20Prediction%20model.ipynb` and click _Create Notebook_ as shown.
 
 ![](/doc/source/images/jupyternotebook.png)
 
