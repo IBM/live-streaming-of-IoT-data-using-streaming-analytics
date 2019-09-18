@@ -40,7 +40,7 @@ When you have completed this code pattern, you will understand how to:
 1. [Clone the repo](#1-clone-the-repo).
 2. [Deploy API](#2-deploy-api).
 3. [Create Watson Services](#3-create-watson-services).
-4. [Deploy the ML Model](#4-deploy-the-ml-model).
+4. [Run the Jupyter Notebook and Deploy the ML Model](#4-run-the-jupyter-notebook-and-deploy-the-ml-model).
 5. [Create IBM Streaming Analytics service](#5-create-ibm-streaming-analytics-service).
 6. [Create the Streams Flow in Watson Studio](#6-create-the-streams-flow-in-watson-studio).
 7. [Visualize the Streams Dashboard](#7-visualize-the-streams-dashboard).
@@ -53,7 +53,7 @@ Clone the `live-streaming-of-IoT-data-using-streaming-analytics` repo locally. I
 $ git clone https://github.com/IBM/live-streaming-of-IoT-data-using-streaming-analytics
 ```
 
-We’ll be using the file [`data/training-testing-data.csv`](data/training-testing-data.csv) and the folder
+We’ll be using the file [`Data/training-testing-data.csv`](Data/training-testing-data.csv) and the folder
 [`flask-API`](flask-api/).
 
 ### 2. Deploy API
@@ -155,7 +155,15 @@ Create the following services:
 ![](/doc/source/images/jupyternotebook.png)
 
 
-### 4. Deploy the ML Model
+### 4. Run the Jupyter Notebook and Deploy the ML Model
+
+* In Jupyter Notebook under _`Files`_ click on _`browse`_ and load the `training-testing-data.csv` dataset from the `Data` directory.
+
+![](/doc/source/images/datasetadd.png)
+
+* You will now see `training-testing-data.csv` on the right side panel. Click on the third cell of the notebook and insert the pandas DataFrame for the dataset as shown.
+
+![](/doc/source/images/insertCOScredentials.png)
 
 
 ### 5. Create IBM Streaming Analytics service
