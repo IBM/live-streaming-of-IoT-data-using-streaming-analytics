@@ -53,7 +53,7 @@ Clone the `live-streaming-of-IoT-data-using-streaming-analytics` repo locally. I
 $ git clone https://github.com/IBM/live-streaming-of-IoT-data-using-streaming-analytics
 ```
 
-We’ll be using the file [`Data/training-testing-data.csv`](Data/training-testing-data.csv) and the folder
+We’ll be using the file [`Data/training-testing-data.xlsx`](Data/training-testing-data.xlsx) and the folder
 [`flask-API`](flask-api/).
 
 ### 2. Deploy API
@@ -133,10 +133,17 @@ Waiting for app to start...
 
 ### 3. Create Watson services
 
-Create the following services:
+#### 3.1 Create the Watson Machine Learning Service
 
-* [**Watson Studio**](https://cloud.ibm.com/catalog/services/watson-studio)
-* [**Watson Machine Learning**](https://cloud.ibm.com/catalog/services/machine-learning)
+* Create [**Watson Machine Learning**](https://cloud.ibm.com/catalog/services/machine-learning) service.
+
+* Once the service is created, on the landing page click on _`Service credentials`_ in the left panel and then click _`New Credential`_ and create credentials for the service and copy the credentials somewhere as it will be required in subsequent steps.
+
+![](/doc/source/images/wmlcredentials.gif)
+
+#### 3.2 Create the Watson Studio Service
+
+* Create [**Watson Studio**](https://cloud.ibm.com/catalog/services/watson-studio) service.
 
 * Goto [IBM Cloud Resources](https://cloud.ibm.com/resources) and select the _`Watson Studio`_ service.
 
@@ -157,7 +164,7 @@ Create the following services:
 
 ### 4. Run the Jupyter Notebook and Deploy the ML Model
 
-* In Jupyter Notebook under _`Files`_ click on _`browse`_ and load the `training-testing-data.csv` dataset from the `Data` directory.
+* In Jupyter Notebook under _`Files`_ click on _`browse`_ and load the `training-testing-data.xlsx` dataset from the `Data` directory.
 
 ![](/doc/source/images/datasetadd.png)
 
