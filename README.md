@@ -186,9 +186,15 @@ At this point you have successfully Created an API and Deployed a Predictive mod
 
 ### 5. Create IBM Streaming Analytics service
 
+* Create a [Streaming Analytics](https://cloud.ibm.com/catalog/services/streaming-analytics) service.
+
+![](/doc/source/images/streaminganalytics.png)
+
+* This service will be consumed in next step.
 
 ### 6. Create the Streams Flow in Watson Studio
 
+* Back to Watson Studio project that you created, click on _`Add to project`_ again on the top right corner and select _`Notebook`_ in the options. 
 
 ### 7. Visualize the Streams Dashboard
 
