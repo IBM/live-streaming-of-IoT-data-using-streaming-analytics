@@ -215,6 +215,26 @@ At this point you have successfully Created an API and Deployed a Predictive mod
 
 >NOTE: Polling Interval is the time in sec for how often the API call is made by the Stream.
 
+* Set the OUTPUT SCHEMA as follows:
+
+|Attribute Name |Type |Path |
+|---|---|---|
+|ID |Number |/ID  |
+|Age |Number |/Age  |
+|Experience |Number |/Experience  |
+|Income |Number |/Income  |
+|ZIPCode |Number |/ZIPCode  |
+|Family |Number |/Family  |
+|CCAvg |Number |/CCAvg  |
+|Education |Number |/Education  |
+|Mortgage |Number |/Mortgage  |
+|SecuritiesAccount |Number |/SecuritiesAccount  |
+|CDAccount |Number |/CDAccount  |
+|Online |Number |/Online  |
+|CreditCard |Number |/CreditCard  |
+
+>NOTE: These Attributes are taken from the Dataset.
+
 ### 7. Visualize the Streams Dashboard
 
 <!--Add a section that explains to the reader what typical output looks like, include screenshots -->
