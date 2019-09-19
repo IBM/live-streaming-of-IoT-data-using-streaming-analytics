@@ -194,7 +194,16 @@ At this point you have successfully Created an API and Deployed a Predictive mod
 
 ### 6. Create the Streams Flow in Watson Studio
 
-* Back to Watson Studio project that you created, click on _`Add to project`_ again on the top right corner and select _`Notebook`_ in the options. 
+* Back to Watson Studio project that you created, click on _`Add to project`_ again on the top right corner and select _`Streams flow`_ in the options. 
+
+* The Streams Canvas will be presented. We need three blocks for our demo.
+1. **Input Block** - HTTP Request Block
+2. **Processing Block** - Python Model
+3. **Output Block** - Debug
+
+* Add the Input block from the _`SOURCES`_ tab from the left panel and set the properties as shown.
+
+![](doc/source/images/Http-input-block.gif)
 
 ### 7. Visualize the Streams Dashboard
 
