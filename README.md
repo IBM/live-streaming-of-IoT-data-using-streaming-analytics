@@ -250,6 +250,8 @@ At this point you have successfully Created an API and Deployed a Predictive mod
   * numpy == 1.17.2
   * pandas == 0.25.1
   
+ ![](/doc/source/images/python-block2.gif)
+ 
 * Click on the Python model block again to get the Model Settings panel. Under code, delete the existing code and add the following code:
 
 ```python
@@ -330,7 +332,7 @@ def load_model(state, model):
 
 * Add the _`Debug`_ block from the _`TARGETS`_ tab from the left panel and set the properties as shown.
 
-![](/doc/source/images/python-block.gif)
+![](/doc/source/images/output-block.gif)
 
 * Finally save and run the Stream Flow as shown. It may take some time to deploy and run. Once the Stream is deployed and running you can visualize the Stream in the Streaming Analytics Dashboard.
 
