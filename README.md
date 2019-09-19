@@ -201,9 +201,19 @@ At this point you have successfully Created an API and Deployed a Predictive mod
 2. **Processing Block** - Python Model
 3. **Output Block** - Debug
 
-* Add the Input block from the _`SOURCES`_ tab from the left panel and set the properties as shown.
+#### 6.1 Input Block 
+
+* Add the _`Http`_ block from the _`SOURCES`_ tab from the left panel and set the properties as shown.
 
 ![](doc/source/images/Http-input-block2.gif)
+
+* Set the HTTP REQUEST DEFINATION as follows:
+
+|URL   |Method   |Headers   |Polling Interval(sec)   |Response body parsing   |
+|---|---|---|---|---|
+|can be found in step 2 https://my-api-xx-yy.eu-gb.mybluemix.net   |GET  |leave blank  |1  |JSON  |
+
+>NOTE: Polling Interval is the time in sec for how often the API call is made by the Stream.
 
 ### 7. Visualize the Streams Dashboard
 
