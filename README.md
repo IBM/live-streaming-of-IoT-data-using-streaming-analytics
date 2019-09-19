@@ -168,11 +168,15 @@ Waiting for app to start...
 
 ![](/doc/source/images/datasetadd.png)
 
-* You will now see `training-testing-data.csv` on the right side panel. Click on the third cell of the notebook and insert the pandas DataFrame for the dataset as shown.
+* You will now see `training-testing-data.xlsx` on the right side panel. Click on the third cell of the notebook and insert the pandas DataFrame for the dataset as shown.
 
-![](/doc/source/images/insertCOScredentials.png)
+![](/doc/source/images/insertCOScred.png)
 
+* Now you will see the credentials and the DataFrame object in the selected cell. Rreplace the two lines as show bellow.
 
+![](/doc/source/images/olddataframe.png)
+
+![](/doc/source/images/newdataframe.png)
 ### 5. Create IBM Streaming Analytics service
 
 
