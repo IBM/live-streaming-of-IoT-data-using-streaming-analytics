@@ -315,6 +315,25 @@ def load_model(state, model):
 	state['model'] = model
 ```
 
+* **SCHEMA** : Drag and connect the 1st Block to the 2nd block as shown, you can then notice the Attributes defined in step 6.1 appearing as Input Schema for the model. Now set the Output Schema as follows:
+
+|Attribute Name |Type |
+|---|---|
+|ID	|Number	|
+|Prediction	|Number	|
+|Income	|Number	|
+|CCAvg	|Number	|
+|Mortgage	|Number	|
+|SecuritiesAccount	|Number	|
+
+#### 6.4 Output Block
+
+* Add the _`Debug`_ block from the _`TARGETS`_ tab from the left panel and set the properties as shown.
+
+![](/doc/source/images/python-block.gif)
+
+* Finally save and run the Stream Flow as shown. It may take some time to deploy and run. Once the Stream is deployed and running you can visualize the Stream in the Streaming Analytics Dashboard.
+
 ### 7. Visualize the Streams Dashboard
 
 <!--Add a section that explains to the reader what typical output looks like, include screenshots -->
