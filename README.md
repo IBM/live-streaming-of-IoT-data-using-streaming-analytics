@@ -252,7 +252,7 @@ At this point you have successfully Created an API and Deployed a Predictive mod
   
 * Click on the Python model block again to get the Model Settings panel. Under code, delete the existing code and add the following code:
 
-```
+```python
 #
 # YOU MUST EDIT THE SCHEMA and add all attributes that you are returning as output.
 #
