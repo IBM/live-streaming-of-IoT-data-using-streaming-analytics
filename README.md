@@ -203,7 +203,7 @@ At this point you have successfully Created an API and Deployed a Predictive mod
 
 * Add the Input block from the _`SOURCES`_ tab from the left panel and set the properties as shown.
 
-![](doc/source/images/Http-input-block.gif)
+![](doc/source/images/Http-input-block2.gif)
 
 ### 7. Visualize the Streams Dashboard
 
