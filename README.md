@@ -172,11 +172,18 @@ Waiting for app to start...
 
 ![](/doc/source/images/insertCOScred.png)
 
-* Now you will see the credentials and the DataFrame object in the selected cell. Rreplace the two lines as show bellow.
+* Now you will see the credentials and the DataFrame object in the selected cell. Rreplace the two lines as show.
 
 ![](/doc/source/images/olddataframe.png)
 
+* Replace `df_data_0` to `data` and add the parameter `'Data'` to the `read_excel` method as shown.
+
 ![](/doc/source/images/newdataframe.png)
+
+* Run the rest of the Notebook following the Instructions in the notebook.
+
+At this point you have successfully Created an API and Deployed a Predictive model. Now we create the Streams Flow.
+
 ### 5. Create IBM Streaming Analytics service
 
 
