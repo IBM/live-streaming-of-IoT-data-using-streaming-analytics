@@ -155,7 +155,7 @@ We will be using Watson studio's jupyter notebook to build and deploy the model 
 
 * Thats it! your database is created at this point.
 
-#### 3.1 Create the Watson Machine Learning Service
+#### 3.2 Create the Watson Machine Learning Service
 
 * Create [**Watson Machine Learning**](https://cloud.ibm.com/catalog/services/machine-learning) service.
 
@@ -165,7 +165,7 @@ We will be using Watson studio's jupyter notebook to build and deploy the model 
 
 ![](/doc/source/images/wmlcredentials.gif)
 
-#### 3.2 Create the Watson Studio Service
+#### 3.3 Create the Watson Studio Service
 
 * Create [**Watson Studio**](https://cloud.ibm.com/catalog/services/watson-studio) service.
 
@@ -232,6 +232,22 @@ At this point you have successfully Created an API and Deployed a Predictive mod
 ### 6. Create the Streams Flow in Watson Studio
 
 * Back to Watson Studio project that you created, click on _`Add to project`_ again on the top right corner and select _`Streams flow`_ in the options. 
+
+![](/doc/source/images/Streamsflowadd.png)
+
+* Enter the name as _**Predictive analytics stream flow**_ Select _`From file`_ and upload the `predictive_stream.stp` file from the `stream` directory which you have cloned. Finally select the Streaming Analytics Service that you created in [step 5](#5-create-ibm-streaming-analytics-service).
+
+![](/doc/source/images/newstreamsflow.png)
+
+>NOTE: If you dont see the Streaming Analytics Service listed you can associate it by clicking the provided link. Checkout [TROUBLESHOOTING.md](#TROUBLESHOOTING.md) for more.
+
+* Before you start the streams flow you need to set a couple of things. In the streams flow dashboard click on _`Edit the streams flow`_ as shown.
+
+![](/doc/source/images/editstreamsflow.png)
+
+* In the Streams Canvas select the first block named `Simulating Real-time Data` to view its properties. In the URL field enter the API URL that you saved in [step 2.1](#2.1-deploy-the-api-and-get-api-url).
+
+![](/doc/source/images/block1changes.png)
 
 * The Streams Canvas will look like this. 
 
