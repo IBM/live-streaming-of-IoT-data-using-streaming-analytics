@@ -260,9 +260,13 @@ At this point you have successfully Created an API and Deployed a Predictive mod
 
 ![](/doc/source/images/deployingstreams.gif)
 
+* You can see the realtime data flow in the Streams Flow.
+
+![](/doc/source/images/runningstream.png)
+
 ### 7. Visualize the Streams Dashboard
 
-<!--Add a section that explains to the reader what typical output looks like, include screenshots -->
+* Once the status is **running** you can visualize the incoming data and the predicted data in IBM Watson Streaming Analytics.
 
 ## Sample output
 
