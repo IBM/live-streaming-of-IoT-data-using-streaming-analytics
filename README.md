@@ -181,7 +181,7 @@ We will be using Watson studio's jupyter notebook to build and deploy the model 
 
 ![](/doc/source/images/createnotebook.png)
 
-* In the New Notebook page click on _`From URL`_ and enter name and the URL : `https://github.com/IBM/live-streaming-of-IoT-data-using-streaming-analytics/blob/master/notebook/Personal_Loan_Prediction_model.ipynb` and click _Create Notebook_ as shown.
+* In the New Notebook page click on _`From URL`_ and enter name and the URL : **`https://github.com/IBM/live-streaming-of-IoT-data-using-streaming-analytics/blob/master/notebook/Python_Predictive_Model.ipynb`** and click _Create Notebook_ as shown.
 
 ![](/doc/source/images/jupyternotebook.png)
 
