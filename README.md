@@ -56,16 +56,20 @@ $ git clone https://github.com/IBM/live-streaming-of-IoT-data-using-streaming-an
 We’ll be using the file [`Data/training-testing-data.xlsx`](Data/training-testing-data.xlsx) and the folder
 [`flask-API`](flask-api/).
 
-### 2. Deploy API
+### 2. Deploy and Test the API
 
 In order to simulate real-time incoming data, we create an API and deploy it to Cloud Foundry.
 >NOTE: IBM Streaming analytics has the following input sources: Stream events from a Kafka broker, IBM Event Streams, MQTT broker, Watson IoT device platform. If you have knowledge about any of these, then you can skip this step and create your own input block.
 
-* Create a [Cloud Foundry](https://cloud.ibm.com/catalog/starters/cloud-foundry?runtime=python) service with python runtime and follow the steps bellow.
+#### 2.1 Deploy the API and get API URL
+
+* Create a [Cloud Foundry](https://cloud.ibm.com/catalog/starters/cloud-foundry?runtime=python) service with python runtime and follow the steps.
 
 ![](doc/source/images/cloudfoundry.png)
 
-* Goto _`flask-api`_ directory.
+* You can give any app name, in our case we have given the app name as `my-api`.
+
+* From the cloned repo, goto _`flask-api`_ directory.
 
 ```bash
 $ cd flask-api/
@@ -90,7 +94,11 @@ $ ibmcloud target --cf
 
 * From within the _`flask-api`_ directory push your app to IBM Cloud.
 ```bash
-$ ibmcloud cf push
+$ ibmcloud cf push <YOUR_APP_NAME>
+```
+>Example: As our app name is `my-api` we use the following command.
+```bash
+$ ibmcloud cf push my-api
 ```
 
 * You will see output on your terminal as shown, verify the state is _`running`_:
@@ -112,30 +120,46 @@ Waiting for app to start...
 
 * Once the API is deployed and running you can test the API.
 
-* Goto [IBM Cloud Resources](https://cloud.ibm.com/resources) and select the Deployed API _`my-api`_. 
+* Goto [IBM Cloud Resources](https://cloud.ibm.com/resources) and select the Deployed API, _`my-api`_ in our case. 
 
 ![](doc/source/images/resourceslist.png)
 
 * Inside the _`my-api`_ dashboard, right click on **Visit App URL** and Copy the link address. 
 >Example link address: https://my-api-xx-yy.eu-gb.mybluemix.net/
 
+**NOTE: This API Link is Important, please save it in any notepad since it will be used in [step 6](#6-create-the-streams-flow-in-watson-studio).**
+
 ![](doc/source/images/cloudfoundrydeployed.png)
 
-**NOTE: This API Link is Important, please save it in any notepad since it will be used in subsequent steps.**
+#### 2.2 Test the API
 
 * To test the API use any Rest API Client like [Postman](https://www.getpostman.com/downloads/).
 
-* Make a GET request to the earlier copied link as shown.
+* Make a GET request to the earlier copied link (https://my-api-xx-yy.eu-gb.mybluemix.net) as shown.
 
 ![](/doc/source/images/postmantest.png)
 
 * A Json body is returned in response which is the outsource data that can be sent to the model to get the predictions.
 
+At this point you have successfully deployed an API.
+
 ### 3. Create Watson services
+
+We will be using Watson studio's jupyter notebook to build and deploy the model in Watson Machine Learning service. Also to create a Watson Studio service we require a Cloud Object Storage service hence we will be creating that as well.
+
+#### 3.1 Create Cloud Object Storage Service
+
+* Create [**Cloud Object Storage**](https://cloud.ibm.com/catalog/services/cloud-object-storage) service.
+
+![](/doc/source/images/createcos.png)
+
+* Thats it! your database is created at this point.
 
 #### 3.1 Create the Watson Machine Learning Service
 
 * Create [**Watson Machine Learning**](https://cloud.ibm.com/catalog/services/machine-learning) service.
+
+![](/doc/source/images/createwmlok.png)
 
 * Once the service is created, on the landing page click on _`Service credentials`_ in the left panel and then click _`New Credential`_ and create credentials for the service and copy the credentials somewhere as it will be required in subsequent steps.
 
@@ -145,42 +169,55 @@ Waiting for app to start...
 
 * Create [**Watson Studio**](https://cloud.ibm.com/catalog/services/watson-studio) service.
 
-* Goto [IBM Cloud Resources](https://cloud.ibm.com/resources) and select the _`Watson Studio`_ service.
+![](/doc/source/images/createwatsonstudio.gif)
 
-![](doc/source/images/resourceslist2.png)
+* Then click on **Get Started**.
 
-* Then click **Get Started**.
-
-* In Watson Studio click Create a project > Create an empty project and name it _`Streaming Analytics Demo`_.
+* In Watson Studio click **`Create a project > Create an empty project`** and name it **_`Streaming Analytics Demo`_**.
 
 ![](/doc/source/images/watsonstudioproject.png)
 
 * Once the project is created, click on _`Add to project`_ on the top right corner and select _`Notebook`_ in the options.
 
+![](/doc/source/images/createnotebook.png)
+
 * In the New Notebook page click on _`From URL`_ and enter name and the URL : `https://github.com/IBM/live-streaming-of-IoT-data-using-streaming-analytics/blob/master/notebook/Personal_Loan_Prediction_model.ipynb` and click _Create Notebook_ as shown.
 
 ![](/doc/source/images/jupyternotebook.png)
 
+At this point Watson Services are all setup. Now its time to code!
 
 ### 4. Run the Jupyter Notebook and Deploy the ML Model
 
-* In Jupyter Notebook under _`Files`_ click on _`browse`_ and load the `training-testing-data.xlsx` dataset from the `Data` directory.
+In this session we build a Naive Bayes Model for predicting whether a customer will accept personal loan or not. The dataset is taken from Kaggle (https://www.kaggle.com/itsmesunil/bank-loan-modelling).
+
+* Open Jupyter Notebook, under _`Files`_ click on _`browse`_ and load the `training-testing-data.xlsx` dataset from the `Data` directory which was earlier cloned.
 
 ![](/doc/source/images/datasetadd.png)
 
-* You will now see `training-testing-data.xlsx` on the right side panel. Click on the third cell of the notebook and insert the pandas DataFrame for the dataset as shown.
+* You will now see `training-testing-data.xlsx` on the right side panel. Click on the cell shown in the image below and insert the pandas DataFrame for the dataset as shown.
 
 ![](/doc/source/images/insertCOScred.png)
 
-* Now you will see the credentials and the DataFrame object in the selected cell. Rreplace the two lines as show.
-
+* Now you will see the credentials and the DataFrame object in the selected cell. **Replace the two lines as show**.
+	
 ![](/doc/source/images/olddataframe.png)
 
 * Replace `df_data_0` to `data` and add the parameter `'Data'` to the `read_excel` method as shown.
 
+```python3
+data = pd.read_excel(body, 'Data')
+data.head()
+```
 ![](/doc/source/images/newdataframe.png)
 
-* Run the rest of the Notebook following the Instructions in the notebook.
+* Insert your Watson Machine Learning Credentials in the third cell as shown.
+
+![](/doc/source/images/wmlcred.png)
+
+* Run the notebook by selecting `Cell` and `Run All` as shown.
+
+![](/doc/source/images/runall.png)
 
 At this point you have successfully Created an API and Deployed a Predictive model. Now we create the Streams Flow.
 
@@ -201,6 +238,7 @@ At this point you have successfully Created an API and Deployed a Predictive mod
 ![](/doc/source/images/streamscanvas.png)
 
 We need three blocks for our demo.
+
 1. **Input Block** - HTTP Request Block
 2. **Processing Block** - Python Model
 3. **Output Block** - Debug
