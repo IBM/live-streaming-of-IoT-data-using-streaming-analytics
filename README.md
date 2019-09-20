@@ -235,7 +235,7 @@ At this point you have successfully Created an API and Deployed a Predictive mod
 
 * The Streams Canvas will look like this. 
 
-![](/doc/source/images/streamscanvas.png)
+![](/doc/source/images/streamcanvas.png)
 
 We need three blocks for our demo.
 
