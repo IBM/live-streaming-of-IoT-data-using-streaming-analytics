@@ -159,7 +159,7 @@ We will be using Watson studio's jupyter notebook to build and deploy the model 
 
 * Create [**Watson Machine Learning**](https://cloud.ibm.com/catalog/services/machine-learning) service.
 
-![](/doc/source/images/createwmlok.png)
+![](/doc/source/images/createwml.png)
 
 * Once the service is created, on the landing page click on _`Service credentials`_ in the left panel and then click _`New Credential`_ and create credentials for the service and copy the credentials somewhere as it will be required in subsequent steps.
 
@@ -169,7 +169,7 @@ We will be using Watson studio's jupyter notebook to build and deploy the model 
 
 * Create [**Watson Studio**](https://cloud.ibm.com/catalog/services/watson-studio) service.
 
-![](/doc/source/images/createwatsonstudio.gif)
+![](/doc/source/images/createwatsonstudio.png)
 
 * Then click on **Get Started**.
 
