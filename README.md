@@ -160,9 +160,19 @@ We will be using Watson studio's jupyter notebook to build and deploy the model 
 
 ![](/doc/source/images/createwml.png)
 
-* Once the service is created, on the landing page click on _`Service credentials`_ in the left panel and then click _`New Credential`_ and create credentials for the service and copy the credentials somewhere as it will be required in subsequent steps.
+* Once the service is created, on the landing page click on _`Service credentials`_ in the left panel and then click _`New Credential`_ and create credentials for the service as shown. 
 
-![](/doc/source/images/wmlcredentials.gif)
+![](/doc/source/images/wmlcredentials.png)
+
+* Click `Add` to generate credentials.
+
+![](/doc/source/images/wmlcredentials2.png)
+
+* The newly created credentials can ve viewed by clicking the **_View credentials_** and copy the credentials as shown.
+
+![](/doc/source/images/wmlcredentials3.png)
+
+**NOTE: Copy the Credentials in some notepad as it will be required in [step 4](#4-run-the-jupyter-notebook-and-deploy-the-ml-model)**
 
 #### 3.3. Create the Watson Studio Service
 
