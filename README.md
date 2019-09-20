@@ -296,6 +296,19 @@ At this point you have successfully Created an API and Deployed a Predictive mod
 
 ![](/doc/source/images/streamsconsole.png)
 
+* Based on the dataset we have understood that the following attributes affect the prediction:
+	* Income
+	* CCAvg
+	* Mortgage
+	* SecuritiesAccount
+Hence we will be adding widgets to monitor these attributes along with the Prediction attribute.
+
+* To add widget hover your over the arrow mark from _**Python Model**_ to _**Debug**_ and click _**Create Dashboard View**_ as shown.
+
+![](/doc/source/images/streamsconsole2.gif)
+
+* 
+
 ## Sample output
 
 ![](doc/source/images/dashboard.gif)
