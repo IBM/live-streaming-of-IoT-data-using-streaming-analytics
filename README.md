@@ -288,6 +288,14 @@ At this point you have successfully Created an API and Deployed a Predictive mod
 
 ![](/doc/source/images/streamsdashboardlaunch.png)
 
+* You can see the streams flow that we built in the Watson Studio.
+
+![](/doc/source/images/streamsconsole.png)
+
+* For the use case that we have considered, we will be monitoring the _**predictions**_ for the customers who will take personal loan and the _**Factors influencing the predictions**_.
+
+![](/doc/source/images/streamsconsole.png)
+
 ## Sample output
 
 ![](doc/source/images/dashboard.gif)
