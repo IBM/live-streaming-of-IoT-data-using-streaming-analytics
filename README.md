@@ -33,7 +33,6 @@ When you have completed this code pattern, you will understand how to:
 
 ## Pre-requisites
 1. [IBM Cloud Account](https://cloud.ibm.com)
-2. [Cloud Object Storage Service](https://cloud.ibm.com/catalog/services/cloud-object-storage)
 
 ## Steps
 
@@ -61,7 +60,7 @@ We’ll be using the file [`Data/training-testing-data.xlsx`](Data/training-test
 In order to simulate real-time incoming data, we create an API and deploy it to Cloud Foundry.
 >NOTE: IBM Streaming analytics has the following input sources: Stream events from a Kafka broker, IBM Event Streams, MQTT broker, Watson IoT device platform. If you have knowledge about any of these, then you can skip this step and create your own input block.
 
-#### 2.1 Deploy the API and get API URL
+#### 2.1. Deploy the API and get API URL
 
 * Create a [Cloud Foundry](https://cloud.ibm.com/catalog/starters/cloud-foundry?runtime=python) service with python runtime and follow the steps.
 
@@ -131,7 +130,7 @@ Waiting for app to start...
 
 ![](doc/source/images/cloudfoundrydeployed.png)
 
-#### 2.2 Test the API
+#### 2.2. Test the API
 
 * To test the API use any Rest API Client like [Postman](https://www.getpostman.com/downloads/).
 
@@ -147,7 +146,7 @@ At this point you have successfully deployed an API.
 
 We will be using Watson studio's jupyter notebook to build and deploy the model in Watson Machine Learning service. Also to create a Watson Studio service we require a Cloud Object Storage service hence we will be creating that as well.
 
-#### 3.1 Create Cloud Object Storage Service
+#### 3.1. Create Cloud Object Storage Service
 
 * Create [**Cloud Object Storage**](https://cloud.ibm.com/catalog/services/cloud-object-storage) service.
 
@@ -155,7 +154,7 @@ We will be using Watson studio's jupyter notebook to build and deploy the model 
 
 * Thats it! your database is created at this point.
 
-#### 3.2 Create the Watson Machine Learning Service
+#### 3.2. Create the Watson Machine Learning Service
 
 * Create [**Watson Machine Learning**](https://cloud.ibm.com/catalog/services/machine-learning) service.
 
@@ -165,7 +164,7 @@ We will be using Watson studio's jupyter notebook to build and deploy the model 
 
 ![](/doc/source/images/wmlcredentials.gif)
 
-#### 3.3 Create the Watson Studio Service
+#### 3.3. Create the Watson Studio Service
 
 * Create [**Watson Studio**](https://cloud.ibm.com/catalog/services/watson-studio) service.
 
@@ -248,6 +247,10 @@ At this point you have successfully Created an API and Deployed a Predictive mod
 * In the Streams Canvas select the first block named `Simulating Real-time Data` to view its properties. In the URL field enter the API URL that you saved in [step 2.1](#2.1-deploy-the-api-and-get-api-url).
 
 ![](/doc/source/images/block1changes.png)
+
+* Now click on the second block named `Python Model` to view its properties. Select the Python model deployed earlier.
+
+![](/doc/source/images/block2changes.png)
 
 * The Streams Canvas will look like this. 
 
