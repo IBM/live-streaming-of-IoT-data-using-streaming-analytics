@@ -243,7 +243,7 @@ We need three blocks for our demo.
 
 #### 6.2 Processing Block
 
-* Add the _`Python Model`_ block from the _`SOURCES`_ tab from the left panel and set the properties as shown.
+* Add the _`Python Model`_ block from the _`PROCESSING AND ANALYTICS`_ tab from the left panel and set the properties as shown.
 
 ![](/doc/source/images/python-block.gif)
 
