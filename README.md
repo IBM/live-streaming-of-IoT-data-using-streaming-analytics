@@ -248,11 +248,11 @@ At this point you have successfully Created an API and Deployed a Predictive mod
 
 ![](/doc/source/images/block1changes.png)
 
-* Now click on the second block named `Python Model` to view its properties. Select the Python model deployed earlier. Checkout [TROUBLESHOOTING.md](#TROUBLESHOOTING.md) for more.
+* Now click on the second block named `Python Model` to view its properties. Select the Python model deployed earlier. 
 
 ![](/doc/source/images/block2changes.png)
 
->NOTE: If you dont see the deployed model then you need to add the Watson Machine Learning service to your project manually. 
+>NOTE: If you dont see the deployed model then you need to add the Watson Machine Learning service to your project manually. Checkout [TROUBLESHOOTING.md](#TROUBLESHOOTING.md) for more. 
 
 * Finally click on `Save and run` to build and deploy the streams flow to your IBM Watson Streaming Analytics service.
 
