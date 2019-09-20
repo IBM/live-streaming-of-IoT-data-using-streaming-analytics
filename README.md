@@ -220,7 +220,7 @@ data.head()
 ```
 ![](/doc/source/images/newdataframe.png)
 
-* Insert your Watson Machine Learning Credentials in the third cell as shown.
+* Insert your Watson Machine Learning Credentials which was copied in [step 3.2](#3.2-create-the-watson-machine-learning-service) in the third cell as shown.
 
 ![](/doc/source/images/wmlcred.png)
 
