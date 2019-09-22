@@ -318,6 +318,10 @@ Hence we will be adding widgets to monitor these attributes along with the Predi
 ![](/doc/source/images/streamsconsole4.png)
 ![](/doc/source/images/streamsconsole5.png)
 
+* You can now see **Predictor Importance** bar graph in the dashboard.
+
+![](/doc/source/images/streamsconsole6.png)
+
 ## Sample output
 
 ![](doc/source/images/dashboard.gif)
