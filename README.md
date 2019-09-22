@@ -313,7 +313,10 @@ Hence we will be adding widgets to monitor these attributes along with the Predi
 
 ![](/doc/source/images/streamsconsole3.png)
 
-* 
+* Enter the **Chart Name**: `Predictor Importance` and then click on ** Categories** tab and select **SecuritiesAccount**, **Mortgage**, **Income** & **CCAvg**.
+
+![](/doc/source/images/streamsconsole4.png)
+![](/doc/source/images/streamsconsole5.png)
 
 ## Sample output
 
