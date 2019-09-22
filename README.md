@@ -332,7 +332,12 @@ Hence we will be adding widgets to monitor these attributes along with the Predi
 
 ![](/doc/source/images/streamsconsole10.png)
 
+* Now add the **Predictions** Bar Graph and Line Graph in the similar way as shown.
 
+![](/doc/source/images/streamsconsole11.png)
+![](/doc/source/images/streamsconsole12.png)
+![](/doc/source/images/streamsconsole13.png)
+![](/doc/source/images/streamsconsole14.png)
 
 ## Sample output
 
