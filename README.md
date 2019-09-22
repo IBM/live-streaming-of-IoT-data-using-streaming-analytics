@@ -322,6 +322,18 @@ Hence we will be adding widgets to monitor these attributes along with the Predi
 
 ![](/doc/source/images/streamsconsole6.png)
 
+* Similarly you can create a line graph for the same attributes as shown.
+
+![](/doc/source/images/streamsconsole7.png)
+![](/doc/source/images/streamsconsole8.png)
+![](/doc/source/images/streamsconsole9.png)
+
+* You can now see **Predictor Importance** line graph in the dashboard.
+
+![](/doc/source/images/streamsconsole10.png)
+
+
+
 ## Sample output
 
 ![](doc/source/images/dashboard.gif)
