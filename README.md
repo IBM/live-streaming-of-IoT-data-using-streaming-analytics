@@ -309,6 +309,12 @@ Hence we will be adding widgets to monitor these attributes along with the Predi
 
 ![](/doc/source/images/streamsconsole2.png)
 
+* You can now see **Monitoring Data** table in your dashboard. Click on create Bar Graph Button in the table as shown.
+
+![](/doc/source/images/streamsconsole3.png)
+
+* 
+
 ## Sample output
 
 ![](doc/source/images/dashboard.gif)
