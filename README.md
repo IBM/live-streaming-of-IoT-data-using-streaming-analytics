@@ -305,7 +305,9 @@ Hence we will be adding widgets to monitor these attributes along with the Predi
 
 ![](/doc/source/images/streamsconsole1.png)
 
-* 
+* In _**Create Data Visualisation View**_ enter **View Name**: ``Monitoring Data`` and click _OK_.
+
+![](/doc/source/images/streamsconsole2.png)
 
 ## Sample output
 
