@@ -303,7 +303,7 @@ Hence we will be adding widgets to monitor these attributes along with the Predi
 
 * To add widget hover your over the arrow mark from _**Python Model**_ to _**Debug**_ and click _**Create Dashboard View**_ as shown.
 
-![](/doc/source/images/streamsconsole2.png)
+![](/doc/source/images/streamsconsole1.png)
 
 * 
 
