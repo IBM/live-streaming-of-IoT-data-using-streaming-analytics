@@ -341,6 +341,15 @@ Hence we will be adding widgets to monitor these attributes along with the Predi
 ![](/doc/source/images/streamsconsole13.png)
 ![](/doc/source/images/streamsconsole14.png)
 
+* Finally you can see the rich dashboard with predictor importance attributes and the predictions.
+
+![](/doc/source/images/streamsconsole15.png)
+
+* **Conclusion: ** Data is growing fast in volume, variety, and complexity. Everyday, we create 2.5 quintillion bytes of data! Traditional analytic solutions are not able to fully/unlock the potential value of that data.
+ 
+    
+In a streams flow, you can access and analyze massive amounts of changing data as it is created. Regardless of whether the data is structured or unstructured, you can leverage data at scale to drive real-time analytics for up-to-the-minute business decisions.
+
 ## Sample output
 
 ![](doc/source/images/dashboard.gif)
