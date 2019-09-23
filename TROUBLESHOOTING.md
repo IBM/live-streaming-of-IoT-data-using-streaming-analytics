@@ -1,1 +1,11 @@
-hi
+![](/doc/source/images/troubleshooting1.png)
+![](/doc/source/images/troubleshooting2.png)
+![](/doc/source/images/troubleshooting3.png)
+![](/doc/source/images/troubleshooting4.png)
+![](/doc/source/images/troubleshooting5.png)
+![](/doc/source/images/troubleshooting6.png)
+![](/doc/source/images/troubleshooting7.png)
+![](/doc/source/images/troubleshooting8.png)
+![](/doc/source/images/troubleshooting9.png)
+![](/doc/source/images/troubleshooting10.png)
+![](/doc/source/images/troubleshooting11.png)
