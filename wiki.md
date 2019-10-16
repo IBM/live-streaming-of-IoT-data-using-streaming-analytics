@@ -34,7 +34,7 @@ We take the use case of a bank selling the personal loan to its customers and pr
 
 # Flow
 
-![Architecture](https://github.com/IBM/live-streaming-of-IoT-data-using-streaming-analytics/doc/source/images/architecture.png)
+![Architecture](https://github.com/IBM/live-streaming-of-IoT-data-using-streaming-analytics/blob/master/doc/source/images/architecture.png)
 
 1. Create a REST API with python and deploy it to Cloud Foundary service. Calling this API returns a json with random attribute values of the outsource dataset. Thus it simulates real-time data.
 2. Create a Watson Studio instance and a Watson Machine Learning instance in IBM Cloud.
