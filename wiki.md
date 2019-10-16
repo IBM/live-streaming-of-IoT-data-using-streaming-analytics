@@ -34,12 +34,12 @@ We take the use case of a bank selling the personal loan to its customers and pr
 
 # Flow
 
-1. Create a REST API with Python and deploy it to Cloud Foundry service. Calling this API returns a json with random attribute values of the outsource dataset. Thus it simulates real-time data.
+1. Create a REST API with python and deploy it to Cloud Foundary service. Calling this API returns a json with random attribute values of the outsource dataset. Thus it simulates real-time data.
 2. Create a Watson Studio instance and a Watson Machine Learning instance in IBM Cloud.
-Create a new Jupyter notebook in Watson Studio and execute the cells to successfully train, test, get accuracy and deploy the model to Watson Machine Learning.
-Once the real-time data source and the machine learning model is ready the stream flow can be built. Create a new Streams Flow in Watson Studio.
-Build a flow with input as the REST API, data processing by the deployed Watson Machine Learning model and save the output to a csv file in Cloud Object Storage.
-Launch the Streaming Analytics dashboard and visualize the data in real-time.
+3. Create a new Jupyter notebook in Watson Studio and execute the cells to successfully train, test, get accuracy and deploy the model to Watson Machine Learning.
+4. Once the Real-time data source and the machine learning model is ready the stream flow can be built. Create a new Streams Flow in Watson Studio.
+5. Build a flow with input as the REST API, data processing by the deployed Watson Machine Learning model and Save the output to a csv file in Cloud Object Storage.
+6. Launch the Streaming Analytics dashboard and visualize the data in real-time.
 
 # Instructions
 
