@@ -7,9 +7,9 @@ Build streams flow to analyse and predict realtime data using IBM Streaming Anal
 Build streams flow to analyse data using IBM Streaming Analytics and to predict value in realtime using a python model deployed on IBM Watson Machine Learning.
 
 # Author
-[Manoj Jahgirdar](https://www.linkedin.com/in/manoj-jahgirdar-6b5b33142/)
-[Srikanth Manne]()
-[Manjula Hosurmath](https://www.linkedin.com/in/manjula-g-hosurmath-0b47031)
+1. [Manoj Jahgirdar](https://www.linkedin.com/in/manoj-jahgirdar-6b5b33142/)
+2. [Srikanth Manne]()
+3. [Manjula Hosurmath](https://www.linkedin.com/in/manjula-g-hosurmath-0b47031)
 
 # URLs
 
