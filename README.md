@@ -36,13 +36,13 @@ When you have completed this code pattern, you will understand how to:
 
 ## Steps
 
-1. [Clone the repo](#1-clone-the-repo).
-2. [Deploy API](#2-deploy-api).
-3. [Create Watson Services](#3-create-watson-services).
-4. [Run the Jupyter Notebook and Deploy the ML Model](#4-run-the-jupyter-notebook-and-deploy-the-ml-model).
-5. [Create IBM Streaming Analytics service](#5-create-ibm-streaming-analytics-service).
-6. [Create the Streams Flow in Watson Studio](#6-create-the-streams-flow-in-watson-studio).
-7. [Visualize the Streams Dashboard](#7-visualize-the-streams-dashboard).
+1. [Clone the repo](#1-clone-the-repo)
+2. [Deploy API](#2-deploy-api)
+3. [Create Watson Services](#3-create-watson-services)
+4. [Run the Jupyter Notebook and Deploy the ML Model](#4-run-the-jupyter-notebook-and-deploy-the-ml-model)
+5. [Create IBM Streaming Analytics service](#5-create-ibm-streaming-analytics-service)
+6. [Create the Streams Flow in Watson Studio](#6-create-the-streams-flow-in-watson-studio)
+7. [Visualize the Streams Dashboard](#7-visualize-the-streams-dashboard)
 
 ### 1. Clone the repo
 
@@ -276,6 +276,8 @@ At this point you have successfully Created an API and Deployed a Predictive mod
 
 ![](/doc/source/images/runningstream.png)
 
+>NOTE: (Optional) If you are interested in understanding the building blocks of the streams flow in detail, refer to the [DETAILED.md](#DETAILED.md) which demonstrates the streams flow in depth.
+
 ### 7. Visualize the Streams Dashboard
 
 * Once the status is **running** you can visualize the incoming data and the predicted data in IBM Watson Streaming Analytics.
@@ -358,20 +360,7 @@ In a streams flow, you can access and analyze massive amounts of changing data a
 
 ## Troubleshooting
 
-* Error: Environment {GUID} is still not active, retry once status is active
-
-  > This is common during the first run. The app tries to start before the Watson Discovery
-environment is fully created. Allow a minute or two to pass. The environment should
-be usable on restart. If you used **Deploy to IBM Cloud** the restart should be automatic.
-
-* Error: Only one free environment is allowed per organization
-
-  > To work with a free trial, a small free Watson Discovery environment is created. If you already have
-a Watson Discovery environment, this will fail. If you are not using Watson Discovery, check for an old
-service thay you might want to delete. Otherwise, use the `.env DISCOVERY_ENVIRONMENT_ID` to tell
-the app which environment you want it to use. A collection will be created in this environment
-using the default configuration.
-
+* Commonly faced challenges are listed in [TROUBLESHOOTING.md](#TROUBLESHOOTING.md).
 <!-- keep this -->
 ## License
 
