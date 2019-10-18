@@ -28,8 +28,6 @@ When you have completed this code pattern, you will understand how to:
 6. Launch the Streaming Analytics dashboard and visualize the data in real-time.
 
 <!--Optionally, update this section when the video is created-->
-## Watch the Video
-
 
 ## Pre-requisites
 1. [IBM Cloud Account](https://cloud.ibm.com)
