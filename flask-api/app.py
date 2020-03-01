@@ -9,9 +9,6 @@ app = Flask(__name__)
 app.config['JSON_SORT_KEYS'] = False
 CORS(app)
 
-'''
-Different application Ignore this method
-'''
 def realtime_simulation():
     df = pd.read_excel('Bank_Personal_Loan_Modelling.xlsx','Data')
     df.pop('Personal Loan')
