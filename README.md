@@ -35,7 +35,7 @@ When you have completed this code pattern, you will understand how to:
 ## Steps
 
 1. [Clone the repo](#1-clone-the-repo)
-2. [Deploy API](#2-deploy-api)
+2. [Deploy and Test the API](#2-deploy-and-test-the-api)
 3. [Create Watson Services](#3-create-watson-services)
 4. [Run the Jupyter Notebook and Deploy the ML Model](#4-run-the-jupyter-notebook-and-deploy-the-ml-model)
 5. [Create IBM Streaming Analytics service](#5-create-ibm-streaming-analytics-service)
