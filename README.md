@@ -31,6 +31,7 @@ When you have completed this code pattern, you will understand how to:
 
 ## Pre-requisites
 1. [IBM Cloud Account](https://cloud.ibm.com)
+2. [IBM Cloud CLI](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started&locale=en-US)
 
 ## Steps
 
