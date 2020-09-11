@@ -20,7 +20,7 @@ When you have completed this code pattern, you will understand how to:
 <!--Optionally, add flow steps based on the architecture diagram-->
 ## Flow
 
-1. Create a REST API with python and deploy it to Cloud Foundary service. Calling this API returns a json with random attribute values of the outsource dataset. Thus it simulates real-time data.
+1. Create a REST API with python and deploy it to Cloud Foundry service. Calling this API returns a json with random attribute values of the outsource dataset. Thus it simulates real-time data.
 2. Create a Watson Studio instance and a Watson Machine Learning instance in IBM Cloud.
 3. Create a new Jupyter notebook in Watson Studio and execute the cells to successfully train, test, get accuracy and deploy the model to Watson Machine Learning.
 4. Once the Real-time data source and the machine learning model is ready the stream flow can be built. Create a new Streams Flow in Watson Studio.
