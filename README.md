@@ -1,5 +1,5 @@
 <!-- Add a new Title and fill in the blanks -->
-# Live streaming and analysis of data with ML Model predictions using IBM Streaming Analytics
+# Build streams flow to analyze and predict realtime data
 
 In this code pattern, we will create a live dashboard view of data, analyze the data and predict accordingly using IBM Streaming Analytics and Watson Studio.
 
